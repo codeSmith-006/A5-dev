@@ -1,41 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>A5 DEV</title>
-    
-        <!-- Adding poppins font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet">
-    
-    
-        <!-- adding daisyUI cdn -->
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-        <script src="https://cdn.tailwindcss.com"></script>
-    
-        <!-- Adding tailwind config and extends fonts and colors -->
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        fontFamily: {
-                            pop: ["Poppins", "sans-serif"],
-                        },
-                        colors: {
-                            btn: "#3752FD",
-                            grid: "#F4F7FF"
-                        },
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A5 DEV</title>
+
+    <!-- Adding poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- adding daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Adding tailwind config and extends fonts and colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        pop: ["Poppins", "sans-serif"],
+                    },
+                    colors: {
+                        btn: "#3752FD",
+                        grid: "#F4F7FF"
                     },
                 },
-            };
-        </script>
-    </head>
-        
+            },
+        };
+    </script>
+</head>
+
 <body class="bg-grid pt-2">
-    
+
+    <!-- header section -->
+    <header>
+
+        <!-- navbar section -->
+        <nav class="container mx-auto bg-white p-6 rounded-2xl mb-3">
+            <!-- nav content -->
+            <div class="flex justify-between">
+                <!-- logo section -->
+                <div class="flex gap-3 items-center">
+                    <img src="assets/logo.png" alt="">
+                    <p class="font-pop text-4xl text-[#00303C] font-light">Dev<span class="font-bold">Board</span></p>
+                </div>
+
+                <!-- back to desk button -->
+                <button class="font-pop font-medium text-white px-4 py-1 bg-btn rounded-lg">Back to Desk</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main section -->
+    <main class="container mx-auto">
+
+        <!-- heading -->
+        <h1 class="font-pop text-center font-extrabold text-2xl text-[#00303C] mb-3">Blogs</h1>
+
+        <!-- question content -->
+        <div>
+
+            <!-- question 1 -->
+            <div class="bg-white rounded-xl mb-5">
+
+                <!-- question name -->
+                <div class="border-b-2 border-dashed border-opacity-70 py-4 px-4">
+                    <h1 class="font-pop font-bold text-xl text-[#00303C]">Question-1: What are the different ways to
+                        select an element in the DOM?</h1>
+                </div>
+
+                <!-- question answer -->
+                <div class=" bg-white py-4 px-4 border-opacity-70">
+                    <h1 class="font-pop text-xl text-[#00303C]">There are several ways to select an element like by id
+                        -> getElementById, by className -> getElementsByClassName, by tag names, by querySelector, by
+                        querySelectorAll and so on</h1>
+                </div>
+            </div>
+
+            <!-- question 2 -->
+            <div class="bg-white rounded-xl mb-5">
+
+                <!-- question name -->
+                <div class="border-b-2 border-dashed border-opacity-70 py-4 px-4">
+                    <h1 class="font-pop font-bold text-xl text-[#00303C]">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+                </div>
+
+                <!-- question answer -->
+                <div class=" bg-white py-4 px-4 border-opacity-70">
+                    <h1 class="font-pop text-xl text-[#00303C]">innerHTML -> by innerHTML, I can write full html code after selecting the tag. innerText -> by innerText, I can set the text of the element inside double quotation. textContent -> textContent is as same as innerText but the main difference is innerText influenced by CSS style means I can style also but textContent ignores CSS style</h1>
+                </div>
+            </div>
+
+            <!-- question 3 -->
+            <div class="bg-white rounded-xl mb-5">
+
+                <!-- question name -->
+                <div class="border-b-2 border-dashed border-opacity-70 py-4 px-4">
+                    <h1 class="font-pop font-bold text-xl text-[#00303C]">Question-3: What is event delegation in the DOM?</h1>
+                </div>
+
+                <!-- question answer -->
+                <div class=" bg-white py-4 px-4 border-opacity-70">
+                    <h1 class="font-pop text-xl text-[#00303C]">Suppose I have a list and inside the list I have some list items. Now i want to add onclick for each items, i can set onclick on each items or instead i can set onclick to their parent and all the items get the same functionality, that is call event delegation</h1>
+                </div>
+            </div>
+
+            <!-- question 4 -->
+            <div class="bg-white rounded-xl mb-5">
+
+                <!-- question name -->
+                <div class="border-b-2 border-dashed border-opacity-70 py-4 px-4">
+                    <h1 class="font-pop font-bold text-xl text-[#00303C]">Question-4: What is event bubbling in the DOM?</h1>
+                </div>
+
+                <!-- question answer -->
+                <div class=" bg-white py-4 px-4 border-opacity-70">
+                    <h1 class="font-pop text-xl text-[#00303C]">Suppose i set a click function in the body with print body is clicked then a list with print list is clicked then list items with print items is clicked. When I click in the items -> it will the compiler will find the last click target item that was clicked, in that case last item is items so it will print items then compiler will go reverse and find if there is any click function or not. So, it will go to items parent that is list and print list is clicked then it will go it's parent which is body and it will print body is clicked like bubbling. This concept is called event bubbling </h1>
+                </div>
+            </div>
+
+            <!-- question 5 -->
+            <div class="bg-white rounded-xl mb-5">
+
+                <!-- question name -->
+                <div class="border-b-2 border-dashed border-opacity-70 py-4 px-4">
+                    <h1 class="font-pop font-bold text-xl text-[#00303C]">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+                </div>
+
+                <!-- question answer -->
+                <div class=" bg-white py-4 px-4 border-opacity-70">
+                    <h1 class="font-pop text-xl text-[#00303C]">Create Element -> .createElement(), add element -> appendChild(), remove element -> removeChild()</h1>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
 </body>
+
 </html>
