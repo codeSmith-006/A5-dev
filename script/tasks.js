@@ -86,6 +86,7 @@ for (const btn of completedBtns) {
     })
 }
 
+// clear the history log after click the clear history button
 clearBtn.addEventListener("click", () => {
     taskHistory.innerHTML = ``;
 
